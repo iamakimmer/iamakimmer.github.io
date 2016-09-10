@@ -1,38 +1,113 @@
 <html>
+
 <head>
-	<title>matt's daycare</title>
-	<style>
-		body {
-			font-family: "Comic Sans MS", cursive, sans-serif;
-		}
-		h1, h2, div {
-			text-align: center;
-		}
-		h1 {
-			padding: 2em;
-		}
-
-		.text-center {
-			text-align: center;
-		}
-
-		h2 {
-			padding: 10px;
-			background-color: lightblue;
-		}
-	</style>
+    <title>Matt Kim's Portfolio</title>
+    <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
-	<h1>welcome to matt's day care, the best daycare around.</h1>
-	<h2>"i dont have any kids, but if i did, i would send them here." - molly</h2>
-	<h2>"so good i send my own kids here" - matt</h2>
-	<h2>"laughing is encouraged!" - brittany</h2>
 
-	<h1>testimonials from baby</h1>
-	<div>
-		<img src="madison.jpg"/>
-		<h2 >"best choice i ever made" - madison</h2>
-	</div>
-	
+<body>
+    </div>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="img/swagify.png" />
+            <div class="caption clearfix">
+                <div class="title">Swagify</div>
+                <div class="description">Shopify Promotion App</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/actorindexcom.png" />
+            <div class="caption clearfix">
+                <div class="title">ActorIndex.com</div>
+                <div class="description">All Inclusive Website Builder and Film Production Company for Actors</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/trivia.png" />
+            <div class="caption clearfix">
+                <div class="title">Trivia Game</div>
+                <div class="description">Trivia Game in use at Citi Field</div>
+            </div>
+        </div>
+        <div class="grid-item grid-item-wide">
+            <img src="img/beatles.png" />
+            <div class="caption clearfix">
+                <div class="title">Beatles Promo</div>
+                <div class="description">Single Page Promotion Form</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/actorindextemplate.png" />
+            <div class="caption clearfix">
+                <div class="title">ActorIndex.com</div>
+                <div class="description">All Inclusive Website Builder and Film Production Company for Actors</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/bridgetax.png" />
+            <div class="caption clearfix">
+                <div class="title">BridgeTax</div>
+                <div class="description">Reporting and Tax Calculation for MLPs</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/ecohabitude.png" />
+            <div class="caption clearfix">
+                <div class="title">Ecohabitude</div>
+                <div class="description">Marketplace for Socially Responsible & Eco Friendly Products</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/kiosk.png" />
+            <div class="caption clearfix">
+                <div class="title">Free Throws</div>
+                <div class="description">Kiosk for Verizon Free Throw VR Game</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/onthestage.png" />
+            <div class="caption clearfix">
+                <div class="title">On The Stage</div>
+                <div class="description">Ticketing Platform & Website Builder for High Schools</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/onthestage-tickets.png" />
+            <div class="caption clearfix">
+                <div class="title">On The Stage</div>
+                <div class="description">Ticketing Platform & Website Builder for High Schools</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/playlistt.png" />
+            <div class="caption clearfix">
+                <div class="title">Playlistt</div>
+                <div class="description">Shared Music Service Playlist Management</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/rtp.png" />
+            <div class="caption clearfix">
+                <div class="title">Rock The Performance</div>
+                <div class="description">Voice Coaching & Sheet Music Site for Broadway Auditions</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/equilink.png" />
+            <div class="caption clearfix">
+                <div class="title">Equilink</div>
+                <div class="description">Financial Data Import Tools</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    console.log('More/Actual Examples upon request. Please don\'t share as is actual client work. Email: matthewjkim @ gmail.com');
+    var msnry = new Masonry(document.querySelector('.grid'), {
+        itemSelector: '.grid-item'
+    });
+    </script>
 </body>
+
 </html>
