@@ -2,7 +2,8 @@
 
 <head>
     <title>Matt Kim's Portfolio</title>
-    <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <script src="masonry.pkgd.min.js"></script>
+    <script src="imagesloaded.pkgd.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -10,6 +11,7 @@
 <body>
     </div>
     <div class="grid">
+        <div class="grid-sizer"></div>
         <div class="grid-item">
             <img src="img/swagify.png" />
             <div class="caption clearfix">
@@ -104,9 +106,18 @@
     </div>
     <script type="text/javascript">
     console.log('More/Actual Examples upon request. Please don\'t share as is actual client work. Email: matthewjkim @ gmail.com');
-    var msnry = new Masonry(document.querySelector('.grid'), {
-        itemSelector: '.grid-item'
+
+    var grid = document.querySelector('.grid');
+    var msnry;
+
+    imagesLoaded( grid, function() {      
+      msnry = new Masonry( grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
     });
+
     </script>
 </body>
 
